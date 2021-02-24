@@ -13,6 +13,12 @@ let csecNum = 0;
 let secNum = 0;
 let minNum = 0;
 let interval;
+const startAud = new Audio('./Audio/Start.mp3');
+const stopAud = new Audio('./Audio/Stop.mp3');
+const resetAud = new Audio('./Audio/Reset.mp3');
+const splitAud = new Audio('./Audio/Split.mp3');
+const clearLogAud = new Audio('./Audio/ClearLog.mp3');
+
 
 // Main Timer Loop
 timeStart = () => {
@@ -52,17 +58,20 @@ timeStart = () => {
 
 // Start Button
 start.addEventListener('click', () => {
+    startAud.play();
     clearInterval(interval);
     interval = setInterval(timeStart, 10);
 });
 
 // Stop Button
 stop.addEventListener('click', () => {
+    stopAud.play();
     clearInterval(interval);
 });
 
 // Reset Button
 reset.addEventListener('click', () => {
+    resetAud.play();
     clearInterval(interval);
     csecNum = 0;
     csec.innerHTML = '00';
@@ -74,6 +83,7 @@ reset.addEventListener('click', () => {
 
 // Split Button
 split.addEventListener('click', () => {
+    splitAud.play();
     let li = document.createElement('li');
     li.innerText = clock.innerText;
     logsList.append(li);
@@ -81,6 +91,7 @@ split.addEventListener('click', () => {
 
 // Clear Log Button
 clearLog.addEventListener('click', () => {
+    clearLogAud.play();
     let lis = document.querySelectorAll('#logsList li');
     for (let li of lis) {
         li.remove();
