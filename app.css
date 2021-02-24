@@ -1,0 +1,110 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #d40e2f;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: block;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    font-size:2rem;
+    font-weight: 400;
+    padding: 0.4rem 0.6rem;
+    margin: 0;
+}
+
+.clock{
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 12%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 10rem;
+}
+
+.clock span{
+    display: inline-block;
+    width:17rem;
+}
+
+.labels{
+    text-align: center;
+}
+
+.labels span{
+    margin:0 8.4rem;
+}
+
+.buttons{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.buttons button{
+    margin:2rem 8rem;
+    border: 4px #d40e2f solid;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background: none;
+    color: #d40e2f;
+}
+
+.buttons button:hover{
+    background-color: #d40e2f42;
+}
+
+
+.buttons button:active{
+    color: white;
+    border-color: white;
+}
+
+.buttons button:focus{
+    outline: 0;
+}
+
+@media (max-width: 1000px){
+    .clock{
+        font-size: 6rem;
+    }
+
+    .clock span{
+        width:10rem;
+    }
+
+    .labels span{
+        margin:0 4.6rem;
+    }
+}
+
+@media (max-width: 850px){
+    .clock{
+        font-size: 4.5rem;
+    }
+
+    .clock span{
+        width:7.5rem;
+    }
+
+    .labels span{
+        margin:0 3.1rem;
+    }
+
+    .buttons button{
+        padding:10px 25px;
+    }
+}
+
+.logsDiv{
+    margin-left: 10rems;
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 2rem;
+}
+

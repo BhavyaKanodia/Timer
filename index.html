@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Orbitron&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <main class="main">
+        <h1 class="header">TIMER</h1>
+        <div class="clock">
+            <span id="min">00</span>:<span id="sec">00</span>:<span id="csec">00</span>
+        </div>
+        <div class="labels">
+            <span>MIN</span><span>SEC</span><span>CSEC</span>
+        </div>
+        <div class="buttons">
+            <button id="start">START</button><button id="stop">STOP</button><button id="reset">RESET</button>
+            <button id="split">SPLIT</button><button id="clearLog">CLEAR LOG</button>
+        </div>
+        <h2><u>Logs</u></h2>
+        <div class="logsDiv">
+            <ul id="logsList">
+
+            </ul>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
