@@ -7,26 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
 
+    <!-- Font families -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Orbitron&display=swap"
         rel="stylesheet">
 
+    <!-- CSS stylesheet -->
     <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
     <main class="main">
+        <!-- Navbar -->
         <h1 class="header">TIMER</h1>
+
+        <!-- Timer Display -->
         <div class="clock">
             <span id="min">00</span>:<span id="sec">00</span>:<span id="csec">00</span>
         </div>
+
+        <!-- Time Units -->
         <div class="labels">
             <span>MIN</span><span>SEC</span><span>CSEC</span>
         </div>
+
+        <!-- Timer Buttons -->
         <div class="buttons">
             <button id="start">START</button><button id="stop">STOP</button><button id="reset">RESET</button>
             <button id="split">SPLIT</button><button id="clearLog">CLEAR LOG</button>
         </div>
+
+        <!-- Split Time Logs -->
         <h2><u>Logs</u></h2>
         <div class="logsDiv">
             <ul id="logsList">

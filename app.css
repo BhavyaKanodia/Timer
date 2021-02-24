@@ -66,6 +66,16 @@ body{
     outline: 0;
 }
 
+.logsDiv{
+    margin-left: 10rems;
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 2rem;
+}
+
 @media (max-width: 1000px){
     .clock{
         font-size: 6rem;
@@ -97,14 +107,3 @@ body{
         padding:10px 25px;
     }
 }
-
-.logsDiv{
-    margin-left: 10rems;
-    font-size: 1.5rem;
-}
-
-h2{
-    font-size: 2rem;
-    margin: 2rem;
-}
-

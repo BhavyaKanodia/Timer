@@ -1,3 +1,4 @@
+// Initialising variables
 let csec = document.querySelector('#csec');
 let sec = document.querySelector('#sec');
 let min = document.querySelector('#min');
@@ -13,6 +14,7 @@ let secNum = 0;
 let minNum = 0;
 let interval;
 
+// Main Timer Loop
 timeStart = () => {
     csecNum++;
 
@@ -48,15 +50,18 @@ timeStart = () => {
     }
 }
 
+// Start Button
 start.addEventListener('click', () => {
     clearInterval(interval);
     interval = setInterval(timeStart, 10);
 });
 
+// Stop Button
 stop.addEventListener('click', () => {
     clearInterval(interval);
 });
 
+// Reset Button
 reset.addEventListener('click', () => {
     clearInterval(interval);
     csecNum = 0;
@@ -67,12 +72,14 @@ reset.addEventListener('click', () => {
     min.innerHTML = '00';
 });
 
+// Split Button
 split.addEventListener('click', () => {
     let li = document.createElement('li');
     li.innerText = clock.innerText;
     logsList.append(li);
 });
 
+// Clear Log Button
 clearLog.addEventListener('click', () => {
     let lis = document.querySelectorAll('#logsList li');
     for (let li of lis) {
