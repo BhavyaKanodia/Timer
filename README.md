@@ -14,3 +14,5 @@ Functionalities:-
 4. Split 📃 - Creates a copy of the timer's value at that point and passes it into a Log list.
 
 5. Clear Log 📄 - Deletes the list of displayed split values.
+
+Github hosted Timer URL:[Timer App](https://bhavyakanodia.github.io/Timer/)
